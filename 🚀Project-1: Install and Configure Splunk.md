@@ -1,8 +1,10 @@
 
-# 🚀Project-1:Install and Configure Splunk
+# 🚀Project-1: Install and Configure Splunk
 
 ## Objective
-The objective of this task is to install and configure Splunk on an Ubuntu machine. By completing this task, will have Splunk up and running to collect and analyze security logs.
+In this lab will learn:
+- How to install and configure Splunk on an Ubuntu machine.
+- By completing this task, will have Splunk up and running to collect and analyze security logs.
 
 ## Lab Setup Requirements
 - System: Ubuntu 22.04 / 20.04 (Server or Desktop)
