@@ -2,9 +2,10 @@
 # 🚀Project-2: Splunk Basics – DNS Log Analysis
 
 ## 🎯 Objective
-In this lab will Learn how to ingest and analyze DNS logs in Splunk.
-Understand how to extract useful information such as DNS query types, source hosts, and common destinations.
-Practice building basic SPL (Search Processing Language) queries to investigate DNS activity.
+In this lab will Learn:
+- how to ingest and analyze DNS logs in Splunk.
+- Understand how to extract useful information such as DNS query types, source hosts, and common destinations.
+- Practice building basic SPL (Search Processing Language) queries to investigate DNS activity.
 
 
 ## 🖥️ Lab Setup
