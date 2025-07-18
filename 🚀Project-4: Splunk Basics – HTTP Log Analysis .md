@@ -2,9 +2,10 @@
 # 🚀Project-4: Splunk Basics – HTTP Log Analysis
 
 ## 🎯 Objective
-In this lab will Learn how to ingest and analyse HTTP logs using Splunk.
-Detect client errors, server errors, and suspicious web activity.
-Identify large file transfers and suspicious URI access attempts.
+In this lab will Learn:
+- how to ingest and analyse HTTP logs using Splunk.
+- Detect client errors, server errors, and suspicious web activity.
+- Identify large file transfers and suspicious URI access attempts.
 
 ## 🖥️ Lab Setup
 
