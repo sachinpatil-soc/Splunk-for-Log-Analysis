@@ -1,5 +1,4 @@
 
-
 # 🚀Project-2: Splunk Basics – DNS Log Analysis
 
 ## 🎯 Objective
@@ -9,35 +8,42 @@ Practice building basic SPL (Search Processing Language) queries to investigate 
 
 
 ## 🖥️ Lab Setup
-✅ Splunk: Already installed and accessible.
-✅ Data Source: JSON-formatted Zeek DNS logs.
-🌐 Log File: Download the file below and place it in a directory accessible to Splunk for ingestion.
-📥 Download sample dns file
+- ✅ Splunk: Already installed and accessible.
+- ✅ Data Source: JSON-formatted Zeek DNS logs.
+- 🌐 Log File: Download the file below and place it in a directory accessible to Splunk for ingestion.
+- 📥 Download sample dns file
 
 ## ⚙️ Steps to Upload DNS Log into Splunk
-Go to Splunk Web → Settings > Add Data.
-Choose Upload and select the file dns.log.
-Set Source type: json or create a custom source type dns.
-Index: Choose main or create a new index like dns_lab.
-Finish the upload and confirm indexing.
+- Go to Splunk Web → Settings > Add Data.
+- Choose Upload and select the file dns.log.
+- Set Source type: json or create a custom source type dns.
+- Index: Choose main or create a new index like dns_lab.
+- Finish the upload and confirm indexing.
 
 
 ## 🔍 Lab Tasks
 
-Use SPL queries to answer the following:
+### Use SPL queries to answer the following:
+
 ✅Task 1: Identify the most frequently queried domain names
-index=dns_lab sourcetype="json"
-| stats count by query
-| sort -count
+
+	•	index=dns_lab sourcetype=“json”
+	•	stats count by query
+	•	sort -count
+
 
 ✅Task 2: Find the most active user IPs generating DNS traffic
-index=dns_lab sourcetype="json"
-| stats count by "id.orig_h"
-| sort -count
+
+	•	index=dns_lab sourcetype=“json”
+	•	| stats count by “id.orig_h”
+	•	| sort -count
+
 
 ✅Task 3: Breakdown of DNS query types (A, AAAA, CNAME, PTR)
-index=dns_lab sourcetype="json"
-| stats count by qtype
+
+	•	index=dns_lab sourcetype=“json”
+	•	| stats count by qtype
+
 
 
 ## 📸Submission
