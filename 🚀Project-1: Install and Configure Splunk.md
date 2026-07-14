@@ -1,42 +1,66 @@
 
-# 🚀Project-1: Install and Configure Splunk
 
-## Objective
-In this lab will learn:
-- How to install and configure Splunk on an Ubuntu machine.
-- By completing this task, will have Splunk up and running to collect and analyze security logs.
+# 🚀 Project 1 – Splunk Enterprise Deployment
 
-## Lab Setup Requirements
-- System: Ubuntu 22.04 / 20.04 (Server or Desktop)
-- Tools Required:
-- Splunk Enterprise (Free version for local setup)
-- Terminal (Command Line Access)
+## 🎯 Project Objective
+This project demonstrates the deployment and initial configuration of Splunk Enterprise on Ubuntu to simulate the first stage of a Security Operations Center (SOC) environment.
 
-## Steps to Install and Configure Splunk on Ubuntu
-### Step 1: Download Splunk
-- Open Terminal and download Splunk using wget:
-- wget -O splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb "https://download.splunk.com/products/splunk/releases/9.3.0/linux/splunk-9.3.0-51ccf43db5bd-linux-2.6-amd64.deb" ``` 2. Once downloaded, install Splunk:
-- sudo dpkg -i splunk-ubuntu.deb
+A properly configured SIEM platform enables security analysts to centralize logs, monitor security events, and investigate potential threats across enterprise infrastructure.
 
-  
-### Step 2: Enable Splunk as a Service
-- Move to the Splunk installation directory:
-- cd /opt/splunk/bin
-- Accept the license agreement and enable Splunk at boot:
-- sudo ./splunk enable boot-start --accept-license
-- Start Splunk:
-- sudo ./splunk start
-- When prompted, set up an admin username and password.
-   
-### Step 3: Access Splunk Web Interface
-- Open a web browser and go to:
-- http://<your-server-ip>:8000
-- Log in with the admin credentials created earlier.
+---
 
-## Conclusion
-- ✅ Successfully installed Splunk on an Ubuntu machine.
-- ✅ Configured Splunk as a service and enabled auto-start.
+## 🏢 Business Scenario
+Organizations generate thousands of security events every day from servers, applications, firewalls, and network devices.
+Without centralized log collection, security teams have limited visibility into suspicious activity.
 
-## Submission
-### Screenshot of Splunk Web
+In this project, Splunk Enterprise is deployed to provide a centralized platform for collecting and analyzing security logs.
+
+---
+
+### 🛠️ Lab Environment
+
+| Component | Details |
+| :--- | :--- |
+| 🐧 **Operating System** | Ubuntu 22.04 |
+| 🪵 **SIEM Platform** | Splunk Enterprise |
+| 🖥️ **Deployment Type** | Local Lab |
+| 🎯 **Purpose** | Security Monitoring |
+
+---
+
+### ⚙️ Deployment Steps
+
+#### 1️⃣ Install Splunk Enterprise
+* 📦 **Download and install** the Splunk Enterprise package on Ubuntu.
+
+#### 2️⃣ Configure Splunk
+* 📄 **Accept** the license agreement.
+* ⚡ **Enable** boot start.
+* 🚀 **Start** Splunk services.
+* 🔐 **Create** administrator credentials.
+
+#### 3️⃣ Verify Installation
+* 🌐 **Access** the Splunk Web interface and verify that the SIEM platform is operational.
+
+### 📸 Deployment Result
 ![image alt](https://github.com/sachinpatil-soc/30-Day-SOC-Analyst-Challenge-2025/blob/f49d28d1b1ea19dd1a885e19ffc92a426ea42b96/Images/Splunk-enterprise.png)
+
+---
+### ✅ Skills Demonstrated
+
+* 🏗️ **Splunk Enterprise Deployment** — Provisioning a local instance.
+* 🐚 **Ubuntu Administration** — Managing packages via the Linux command line.
+* 🎛️ **SIEM Configuration** — Setting up server roles and policies.
+* 🗄️ **Security Log Platform Setup** — Establishing backend infrastructure.
+* ⚙️ **Basic Linux Administration** — Controlling daemon processes and system startup scripts.
+
+---
+### 🧠 SOC Relevance
+
+* 🏢 **SIEM Foundation** — Deploying and maintaining a SIEM platform is a foundational responsibility within many Security Operations Centers.
+* 
+* 👁️ **Data Workflows** — Although Tier 1 SOC analysts typically do not install Splunk in production, understanding how the platform is deployed provides valuable insight into log ingestion, data availability, and security monitoring workflow.
+
+
+
+
